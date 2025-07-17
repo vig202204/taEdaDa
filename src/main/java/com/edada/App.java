@@ -1,4 +1,4 @@
-package edada.com;
+package com.edada;
 
 /**
  * Hello world!

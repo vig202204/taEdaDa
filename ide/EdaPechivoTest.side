@@ -1,0 +1,93 @@
+{
+  "id": "0a0ffc5a-706e-4cde-b501-81f705bb9c69",
+  "version": "2.0",
+  "name": "EdaPechivo",
+  "url": "https://eda-da.org.ua",
+  "tests": [{
+    "id": "a39fea6e-a9f0-4c1a-bb71-0ae617608205",
+    "name": "ExistCoconutKukies",
+    "commands": [{
+      "id": "a30acf13-6e98-4cbc-8908-88e6779c6920",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66163c16-eae4-414a-91eb-2b3e87a49db1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1285x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50b28a8b-5951-4bb8-a77c-d09a9b6c58fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > .rubr > span",
+      "targets": [
+        ["css=li:nth-child(5) > .rubr > span", "css:finder"],
+        ["xpath=//span[@onclick=\"am_toggle('am7_1_4');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='am7']/div/div/div/ul/li[5]/p/span", "xpath:idRelative"],
+        ["xpath=//li[5]/p/span", "xpath:position"],
+        ["xpath=//span[contains(.,' Выпечка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "077165e7-b12f-451d-90f9-4b99fa7745d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рецепты печенья",
+      "targets": [
+        ["linkText=Рецепты печенья", "linkText"],
+        ["css=#am7_1_4 > .item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Рецепты печенья')]", "xpath:link"],
+        ["xpath=//ul[@id='am7_1_4']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'articles_ru_recipe908.htm')]", "xpath:href"],
+        ["xpath=//li[5]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Рецепты печенья')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e205e22-57c7-4aed-9ea1-af2bb61d569e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td > table tr:nth-child(5) > td",
+      "targets": [
+        ["css=td > table tr:nth-child(5) > td", "css:finder"],
+        ["xpath=//div[@id='mainContent']/table/tbody/tr/td[2]/div[2]/div/div/table/tbody/tr/td/table/tbody/tr[5]/td", "xpath:idRelative"],
+        ["xpath=//tr[5]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1724e413-7cc8-449a-bc06-3fd346014d8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) h2 font",
+      "targets": [
+        ["css=tr:nth-child(5) h2 font", "css:finder"],
+        ["xpath=//div[@id='mainContent']/table/tbody/tr/td[2]/div[2]/div/div/table/tbody/tr/td/table/tbody/tr[5]/td/h2/span/a/font", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/h2/span/a/font", "xpath:position"],
+        ["xpath=//font[contains(.,'Печенье Кокосовый рай')]", "xpath:innerText"]
+      ],
+      "value": "Печенье Кокосовый рай"
+    }, {
+      "id": "d7caf4fd-2c99-40da-a9a6-bca266ea953b",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "Test done!!!"
+    }]
+  }],
+  "suites": [{
+    "id": "4c166266-9308-42f2-8c5a-15ef19dfdd82",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a39fea6e-a9f0-4c1a-bb71-0ae617608205"]
+  }],
+  "urls": ["https://eda-da.org.ua/"],
+  "plugins": []
+}
